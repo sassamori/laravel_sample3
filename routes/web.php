@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello/{msg}',function ($msg) {
+Route::get('hello/{msg}/{msg2}',function ($msg,$msg2) {
 
 $html = <<<EOF
 <html>
@@ -29,6 +29,7 @@ h1 {font-size:100pt; text-align:right; color:#eee; margin:-40px 0 -50px 0; }
 <body>
     <h1>Hello</h1>
     <p>{$msg}</p>
+    <p>{$msg2}</p>
     <p>これは、サンプルで作ったページです。</p>
 </body>
 </html>
