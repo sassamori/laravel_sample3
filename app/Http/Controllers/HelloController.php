@@ -26,7 +26,7 @@ h1{font-size:120pt;text-align:right;color:#fafafa;margin:-50px 0 -120px 0;}
 </body>
 </html>
 EOF;
-        $response->setContent($html);
-        return $response;
+        $url = $response->status();
+        return $url;
     }
 }
